@@ -1,6 +1,6 @@
 %define name    tilda
-%define version 0.09.3
-%define release %mkrel 2
+%define version 0.9.4
+%define release %mkrel 1
 
 %define section System/Terminals
 %define title   Tilda
@@ -75,5 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_bindir}/tilda
 %{_datadir}/applications/mandriva-tilda.desktop
+%exclude %{_datadir}/applications/tilda.desktop
+%{_datadir}/pixmaps/tilda.png
 
 
