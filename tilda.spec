@@ -1,6 +1,6 @@
 %define name    tilda
 %define version 0.9.4
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:        %{longtitle}
 Name:           %{name}
@@ -42,6 +42,12 @@ the desktop till a key or keys is hit.
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 %find_lang %{name}
+
+%post
+%update_menus
+
+%postun
+%clean_menus
 
 %clean
 rm -rf $RPM_BUILD_ROOT
