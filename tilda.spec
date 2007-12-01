@@ -1,12 +1,12 @@
 %define name    tilda
 %define version 0.9.4
-%define release %mkrel 2
+%define release %mkrel 3
 
-Summary:        %{longtitle}
+Summary:        Tilda - Drop Down Terminal for Linux
 Name:           %{name}
 Version:        %{version}
 Release:        %{release}
-License:        GPL
+License:        GPLv2+
 Group:          Terminals
 Url:            http://tilda.sourceforge.net/ 
 Source:         http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
