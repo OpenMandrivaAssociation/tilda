@@ -15,6 +15,8 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:  pkgconfig
 BuildRequires:  vte-devel
 BuildRequires:  confuse-devel
+BuildRequires:  flex
+BuildRequires:  libglade2.0-devel
 
 Requires:       vte
 Requires(post): desktop-file-utils
