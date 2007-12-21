@@ -10,6 +10,7 @@ License:        GPLv2+
 Group:          Terminals
 Url:            http://tilda.sourceforge.net/
 Source:         http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
+BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
 
 BuildRequires:  pkgconfig
 BuildRequires:  vte-devel
