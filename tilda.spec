@@ -23,7 +23,6 @@ Requires(post): desktop-file-utils
 Requires(postun): desktop-file-utils
 
 %description
-
 Tilda is a Linux terminal taking after the likeness
 of many classic terminals from first person shooter
 games, Quake, Doom and Half-Life to name a few,
