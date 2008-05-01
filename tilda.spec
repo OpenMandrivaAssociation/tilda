@@ -1,5 +1,5 @@
 %define name    tilda
-%define version 0.9.5
+%define version 0.9.6
 %define release %mkrel 1
 
 Summary:        Tilda - Drop Down Terminal for Linux
@@ -9,7 +9,7 @@ Release:        %{release}
 License:        GPLv2+
 Group:          Terminals
 Url:            http://tilda.sourceforge.net/
-Source:         http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
+Source:         http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
 
 BuildRequires:  pkgconfig
@@ -39,7 +39,7 @@ the desktop till a key or keys is hit.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall
+%makeinstall_std
 
 mkdir -p %{buildroot}%{_datadir}/%{name}
 mv %{name}.glade %{buildroot}%{_datadir}/%{name}
