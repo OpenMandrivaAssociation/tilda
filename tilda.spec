@@ -1,6 +1,6 @@
 %define name    tilda
 %define version 0.9.6
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary:        Tilda - Drop Down Terminal for Linux
 Name:           %{name}
@@ -11,6 +11,7 @@ Group:          Terminals
 Url:            http://tilda.sourceforge.net/
 Source:         http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 Patch0:		tilda-0.9.6-read-glade.patch
+Patch1:		tilda-0.9.6-fix-segfault.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
 
 BuildRequires:  pkgconfig
@@ -34,13 +35,14 @@ the desktop till a key or keys is hit.
 %prep
 %setup -q -n %{name}-%version
 %patch0 -p0
+%patch1 -p1
 
 %build
 %configure2_5x --disable-rpath
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 mkdir -p %{buildroot}%{_datadir}/%{name}
@@ -60,7 +62,7 @@ rm -f %{buildroot}%{_datadir}/%{name}.glade
 %endif
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
