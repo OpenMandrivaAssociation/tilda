@@ -1,6 +1,6 @@
 %define name    tilda
 %define version 0.9.6
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary:        Tilda - Drop Down Terminal for Linux
 Name:           %{name}
