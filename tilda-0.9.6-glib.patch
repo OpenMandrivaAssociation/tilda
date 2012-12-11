@@ -1,0 +1,23 @@
+--- tilda.desktop.in	2007-03-16 04:53:34.000000000 +0100
++++ tilda.desktop.in	2012-11-28 19:08:53.000000000 +0100
+@@ -2 +1,0 @@
+-Encoding=UTF-8
+@@ -4,2 +3,2 @@
+-Exec=@BINDIR@/tilda
+-Icon=@PIXMAPSDIR@/tilda.png
++Exec=tilda
++Icon=tilda
+@@ -8 +7 @@
+-Categories=GNOME;GTK;Application;Utility;TerminalEmulator;
++Categories=GNOME;GTK;Utility;TerminalEmulator;System;
+
+--- src/tomboykeybinder.h	2007-07-15 04:31:19.000000000 +0200
++++ src/tomboykeybinder.h	2012-11-28 19:42:06.613150329 +0100
+@@ -2,7 +2,7 @@
+ #ifndef __TOMBOY_KEY_BINDER_H__
+ #define __TOMBOY_KEY_BINDER_H__
+
+-#include <glib/gtypes.h>
++//#include <glib/gtypes.h>
+
+ G_BEGIN_DECLS
