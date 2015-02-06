@@ -1,6 +1,6 @@
 %define name    tilda
 %define version 0.9.6
-%define release 7
+%define release 8
 
 Summary:        Drop Down Terminal for Linux
 Name:           %{name}
