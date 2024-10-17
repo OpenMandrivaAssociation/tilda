@@ -8,7 +8,7 @@ Version:        %{version}
 Release:        %{release}
 License:        GPLv2+
 Group:          Terminals
-Url:            http://tilda.sourceforge.net/
+Url:            https://tilda.sourceforge.net/
 Source:         http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 Patch0:		tilda-0.9.6-read-glade.patch
 Patch1:		tilda-0.9.6-fix-segfault.patch
