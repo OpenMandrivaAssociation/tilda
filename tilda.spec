@@ -15,6 +15,11 @@ Patch1:		tilda-0.9.6-fix-segfault.patch
 Patch3:		tilda-0.9.6-glib.patch
 
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(vte)
 BuildRequires:  pkgconfig(libconfuse)
